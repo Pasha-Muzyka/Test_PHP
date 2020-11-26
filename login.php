@@ -9,7 +9,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Авторизация</title>
-    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
 

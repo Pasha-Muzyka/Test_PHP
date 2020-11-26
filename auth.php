@@ -1,14 +1,9 @@
 <?php
     session_start();
 
-    $login = $_POST['login'];
-    $pass = $_POST['password'];
-    if(($login == 'admin') && ($pass == '1111')){
-        $_SESSION['auth'] = True;
-    }
-    else{
-        $_SESSION['auth'] = False;
-    }
+    $_SESSION['login'] = $_POST['login'];
+    $_SESSION['password'] = $_POST['password'];
+    require_once 'connection.php';
 
     header('Location: restricted.php');
 ?>
